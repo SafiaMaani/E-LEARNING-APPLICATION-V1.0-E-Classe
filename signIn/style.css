@@ -1,0 +1,32 @@
+body
+{
+    background: linear-gradient(90deg, rgba(0,193,254,1) 0%, rgba(250,255,193,1) 100%);
+}
+.container
+{
+    height: 550px;
+    width: 475px;
+    left: 483px;
+    top: 175px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+/* h1
+{
+    padding: 20px ;
+} */
+h4
+{
+    text-align: center;
+}
+p
+{
+    text-align: center; 
+    font-size: 14px;
+    /* color: #6C6C6C; */
+}
+/* .btn
+{
+    width: 100%;
+    ma
+} */
