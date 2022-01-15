@@ -17,11 +17,11 @@ body
 } */
 h4
 {
-    text-align: center;
+    /* text-align: center; */
 }
 p
 {
-    text-align: center; 
+    /* text-align: center;  */
     font-size: 14px;
     /* color: #6C6C6C; */
 }
