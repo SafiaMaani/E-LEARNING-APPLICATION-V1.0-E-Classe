@@ -1,0 +1,66 @@
+li
+{
+    list-style-type: none;
+}
+aside
+{
+    background: #FAFFC1;
+    width: 19vw !important;
+    height: 100vh !important;
+}
+.profil
+{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+}
+ul :hover
+{
+    background-color: #00C1FE;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+nav>ul>li>i
+{
+    width: 2vw;
+}
+.logOut :hover
+{
+    background-color: #00C1FE;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+a 
+{
+    text-decoration: none;
+}
+.content
+{
+    width: 81vw;
+    height: 100vh;
+}
+.cadres
+{
+    width: 81vw;
+    height: 10vw;
+}
+.cadres>div
+{
+    width: 15vw;
+}
+.student
+{
+    background: #F0F9FF ;
+}
+.course
+{
+    background:#FEF6FB;
+}
+.payment
+{
+    background: #FEFBEC;
+}
+.users
+{
+    background:linear-gradient(110.42deg, #00C1FE 18.27%, #FAFFC1 91.84%);
+}
