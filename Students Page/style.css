@@ -1,0 +1,62 @@
+li
+{
+    list-style-type: none;
+}
+aside
+{
+    background: #FAFFC1;
+    width: 19vw !important;
+    height: 100vh !important;
+}
+.profil
+{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+}
+ul :hover
+{
+    background-color: #00C1FE;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+nav>ul>li>i
+{
+    width: 2vw;
+}
+.logOut :hover
+{
+    background-color: #00C1FE;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+a 
+{
+    text-decoration: none;
+}
+.content
+{
+    width: 81vw;
+    height: 100vh;
+}
+.searchBar
+{
+    height: 8%;
+}
+.partTwo
+{
+    height: 10%;
+}
+.main
+{
+    background-color: #E5E5E5;
+}
+.card img
+{
+    width: 70px;
+}
+.card
+{
+    width: 97%;
+    height: 10%;
+}
