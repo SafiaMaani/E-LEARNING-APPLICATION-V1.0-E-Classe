@@ -1,0 +1,79 @@
+li
+{
+    list-style-type: none;
+}
+aside
+{
+    background: #FAFFC1;
+    width: 19vw !important;
+    height: 100vh !important;
+}
+.profil
+{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+}
+ul :hover
+{
+    background-color: #00C1FE;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+nav>ul>li>i
+{
+    width: 2vw;
+}
+.logOut :hover
+{
+    background-color: #00C1FE;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+a 
+{
+    text-decoration: none;
+}
+.content
+{
+    width: 81vw;
+    height: 100vh;
+}
+.searchBar
+{
+    height: 10vh;
+    position: relative;
+}
+.play
+{
+    position: absolute;
+    left: 4vw;
+}
+.recherche
+{
+    position: absolute;
+    right: 4vw;
+}
+.partTwo
+{
+    height: 10vh;
+    position: relative;
+}
+.pmtDtl
+{
+    position: absolute;
+    left: 4vw;
+}
+.sort
+{
+    position: absolute;
+    right: 4vw;
+}
+hr{
+    width: 95%;
+}
+.body
+{
+    background-color: #E5E5E5;
+    height: 90vh;
+}
