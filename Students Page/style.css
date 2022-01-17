@@ -41,22 +41,59 @@ a
 }
 .searchBar
 {
-    height: 8%;
+    height: 10vh;
+    position: relative;
+}
+.play
+{
+    position: absolute;
+    left: 4vw;
+}
+.recherche
+{
+    position: absolute;
+    right: 4vw;
 }
 .partTwo
 {
-    height: 10%;
+    height: 10vh;
+    position: relative;
 }
-.main
+.stdList
+{
+    position: absolute;
+    left: 4vw;
+}
+.add
+{
+    position: absolute;
+    right: 4vw;
+}
+hr{
+    width: 95%;
+}
+.body
 {
     background-color: #E5E5E5;
+    height: 90vh;
 }
-.card img
+.icone
 {
-    width: 70px;
+    width: 5vw;
+    height: 5vh;
 }
 .card
 {
     width: 97%;
     height: 10%;
+}
+table
+{
+    border-collapse: separate;
+    border-spacing: 0 0.5vw;
+}
+td
+{
+    padding-bottom: 1.4% !important;
+    padding-top: 1.4% !important;
 }
