@@ -11,16 +11,16 @@
 </head>
 <body>
     <main class="d-flex">
-        <aside class="container m-0 d-flex flex-column">
-            <div class="border-start border-5 border-info mt-2 mb-3 ms-3 px-2">
+          <aside class="m-0 d-flex flex-lg-column flex-md-row">
+            <div class="eclasse border-start border-5 border-info mt-2 mb-3 ms-3 px-2">
                 <h1 class="fs-4">E-classe</h1>
             </div>
-            <div class="d-flex flex-column align-items-center">
+            <div class="profilDiv d-flex flex-column flex-row align-items-center">
                 <img class="profil" src="/Assets/images/profil.png" alt="profil">
                 <h4 class="fs-5">Admin name</h4>
-                <p class=" admin mb-5 fs-6"><a href="#">Admin</a></p>
+                <p class=" admin mb-5 fs-6"><a class="text-decoration-none" href="#">Admin</a></p>
             </div>
-            <nav class="d-flex flex-column align-items-center">
+            <nav class="d-flex flex-lg-column align-items-center">
                 <ul class="nav navbar-nav">
                     <li class="pb-2 pt-2"><a class="d-flex align-items-center text-black text-decoration-none ps-3 pe-3" href="/Home Page/index.html"><i class="fas fa-home mb-0"></i><p class="mb-0">Home</p></a></li>
                     <li class="pb-2 pt-2"><a class="d-flex align-items-center text-black text-decoration-none ps-3 pe-3" href="#"><i class="far fa-bookmark mb-0"></i><p class="mb-0">Course</p></a></li>
@@ -29,10 +29,10 @@
                     <li class="pb-2 pt-2"><a class="d-flex align-items-center text-black text-decoration-none ps-3 pe-3" href="#"><i class="far fa-file-chart-line mb-0"></i><p class="mb-0">Report</p></a></li>
                     <li class="pb-2 pt-2"><a class="d-flex align-items-center text-black text-decoration-none ps-3 pe-3" href="#"><i class="fal fa-sliders-v-square mb-0"></i><p class="mb-0">Setting</p></a></li>
                 </ul>
+                <div class="logOut mt-5 d-flex flex-column align-items-center">
+                    <i class="d-flex flex-row-reverse fal fa-sign-out-alt ps-3 pe-3"><p class="me-3">Logout</p></i>
+                </div>
             </nav>
-            <div class="logOut mt-auto d-flex flex-column align-items-center">
-                <p>Logout<i class="fal fa-sign-out-alt ms-3"></i></p>
-            </div>
         </aside>
         <section class="content">
             <div class="searchBar d-flex align-items-center">
@@ -52,6 +52,7 @@
                     <div class="add">
                         <i class="fal fa-sort ms-5"></i>
                         <button class="btn btn-info text-white">ADD NEW STUDENT</button>
+                        <button class="btnPlus btn-info text-white rounded-circle border-0">+</button>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center"><hr></div>
@@ -62,9 +63,9 @@
                           <th scope="col"></th>
                           <th scope="col">Name</th>
                           <th scope="col">Email</th>
-                          <th scope="col">Phone</th>
-                          <th scope="col">Enroll Number</th>
-                          <th scope="col">Date of admission</th>
+                          <th class="Col" scope="col">Phone</th>
+                          <th class="Col" scope="col">Enroll Number</th>
+                          <th class="Col" scope="col">Date of admission</th>
                           <th></th>
                           <th></th>
                         </tr>
@@ -74,9 +75,9 @@
                           <td scope="row"><img class="icone rounded" src="/Assets/images/icone.jpg" alt="student'sprofil"></td>
                           <td>username</td>
                           <td>user@email.com</td>
-                          <td>7305477760</td>
-                          <td>1234567305477760</td>
-                          <td>08-Dec,2021</td>
+                          <td class="Col">7305477760</td>
+                          <td class="Col">1234567305477760</td>
+                          <td class="Col">08-Dec,2021</td>
                           <td><i class="fal fa-pen"></i></td>
                           <td><i class="fal fa-trash"></i></td>
                         </tr>
@@ -84,9 +85,9 @@
                           <td scope="row"><img class="icone rounded" src="/Assets/images/icone.jpg" alt="student'sprofil"></td>
                           <td>username</td>
                           <td>user@email.com</td>
-                          <td>7305477760</td>
-                          <td>1234567305477760</td>
-                          <td>08-Dec,2021</td>
+                          <td class="Col">7305477760</td>
+                          <td class="Col">1234567305477760</td>
+                          <td class="Col">08-Dec,2021</td>
                           <td><i class="fal fa-pen"></i></td>
                           <td><i class="fal fa-trash"></i></td>
                         </tr>
@@ -94,9 +95,9 @@
                           <td scope="row"><img class="icone rounded" src="/Assets/images/icone.jpg" alt="student'sprofil"></td>
                           <td>username</td>
                           <td>user@email.com</td>
-                          <td>7305477760</td>
-                          <td>1234567305477760</td>
-                          <td>08-Dec,2021</td>
+                          <td class="Col">7305477760</td>
+                          <td class="Col">1234567305477760</td>
+                          <td class="Col">08-Dec,2021</td>
                           <td><i class="fal fa-pen"></i></td>
                           <td><i class="fal fa-trash"></i></td>
                         </tr>
@@ -104,9 +105,9 @@
                           <td scope="row"><img class="icone rounded" src="/Assets/images/icone.jpg" alt="student'sprofil"></td>
                           <td>username</td>
                           <td>user@email.com</td>
-                          <td>7305477760</td>
-                          <td>1234567305477760</td>
-                          <td>08-Dec,2021</td>
+                          <td class="Col">7305477760</td>
+                          <td class="Col">1234567305477760</td>
+                          <td class="Col">08-Dec,2021</td>
                           <td><i class="fal fa-pen"></i></td>
                           <td><i class="fal fa-trash"></i></td>
                         </tr>
@@ -114,19 +115,19 @@
                           <td scope="row"><img class="icone rounded" src="/Assets/images/icone.jpg" alt="student'sprofil"></td>
                           <td>username</td>
                           <td>user@email.com</td>
-                          <td>7305477760</td>
-                          <td>1234567305477760</td>
-                          <td>08-Dec,2021</td>
+                          <td class="Col">7305477760</td>
+                          <td class="Col">1234567305477760</td>
+                          <td class="Col">08-Dec,2021</td>
                           <td><i class="fal fa-pen"></i></td>
                           <td><i class="fal fa-trash"></i></td>
                         </tr>
-                        <tr>
+                        <tr >
                           <td scope="row"><img class="icone rounded" src="/Assets/images/icone.jpg" alt="student'sprofil"></td>
                           <td>username</td>
                           <td>user@email.com</td>
-                          <td>7305477760</td>
-                          <td>1234567305477760</td>
-                          <td>08-Dec,2021</td>
+                          <td class="Col">7305477760</td>
+                          <td class="Col">1234567305477760</td>
+                          <td class="Col">08-Dec,2021</td>
                           <td><i class="fal fa-pen"></i></td>
                           <td><i class="fal fa-trash"></i></td>
                         </tr>

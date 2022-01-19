@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: montserrat;
+}
 aside
 {
     background: #FAFFC1;
@@ -87,4 +91,75 @@ td
 {
     padding-bottom: 1.4% !important;
     padding-top: 1.4% !important;
+}
+@media screen and (max-width : 768px)
+{
+    main
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: 100vh;
+    }
+    .profilDiv
+    {
+        display: none !important;
+    }
+    .content
+    {
+        width: 100%;
+        height: 90vh;
+    }
+    .Col
+    {
+        display: none;
+    }
+    .searchBar
+    {
+        width: 100%;
+        height: 10%;
+    }
+    .btn
+    {
+        display: none;
+    }
+    .body
+    {
+        display: flex;
+        flex-direction: column;
+        height: 90% !important; 
+    }
+    aside
+    {
+        width: 100% !important;
+        height: 10vh !important;
+    }
+    nav>ul>li>a>p
+    {
+        display : none;
+    }
+    .eclasse
+    {
+        display: none;
+    }
+    ul
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: center;
+    }
+    nav>ul>li>a>i
+    {
+        width: 8vw;
+    }
+    .logOut
+    {
+        display: none !important;
+    }
+    .icone
+    {
+        display: none;
+    }
 }
