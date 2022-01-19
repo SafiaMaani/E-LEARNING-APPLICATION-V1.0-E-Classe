@@ -105,6 +105,10 @@ td
     {
         display: none !important;
     }
+    nav
+    {
+        width: 100%;
+    }
     .content
     {
         width: 100%;
@@ -140,7 +144,7 @@ td
     }
     .eclasse
     {
-        display: none;
+        display: none !important;
     }
     ul
     {
