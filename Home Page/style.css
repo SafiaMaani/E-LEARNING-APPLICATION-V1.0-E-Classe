@@ -1,7 +1,3 @@
-li
-{
-    list-style-type: none;
-}
 aside
 {
     background: #FAFFC1;
@@ -18,11 +14,10 @@ ul :hover
 {
     background-color: #00C1FE;
     border-radius: 0.5vw;
-    cursor: pointer;
 }
-nav>ul>li>i
+nav>ul>li>a>i
 {
-    width: 2vw;
+    width: 3vw;
 }
 .logOut :hover
 {
@@ -30,19 +25,17 @@ nav>ul>li>i
     border-radius: 0.5vw;
     cursor: pointer;
 }
-a 
-{
-    text-decoration: none;
-}
 .content
 {
     width: 81vw;
     height: 100vh;
+    background: #E5E5E5;
 }
 .searchBar
 {
     height: 10vh;
     position: relative;
+    background-color: white;
 }
 .play
 {
@@ -54,12 +47,12 @@ a
     position: absolute;
     right: 4vw;
 }
-.cadres
+.body
 {
     width: 81vw;
     height: 10vw;
 }
-.cadres>div
+.body>div
 {
     width: 15vw;
 }
@@ -78,4 +71,44 @@ a
 .users
 {
     background:linear-gradient(110.42deg, #00C1FE 18.27%, #FAFFC1 91.84%);
+}
+@media screen and (max-width : 650px)
+{
+    main
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    aside
+    {
+        display: flex !;
+        flex-direction: row-reverse !important;
+        width: 100vw !important;
+        height: 10vh !important;
+    }
+    .content
+    {
+        width: 100vw;
+        height: 88vh;
+    }
+    .searchBar
+    {
+        height: 5vh;
+    }
+    .body
+    {
+        display: grid;
+        grid-template: 2 ;
+        gap: 10px;
+        width: 50% !important;
+        height: 90%;
+    }
+    nav>ul>li>a>p
+    {
+        display : none;
+    }
+    .eclasse
+    {
+        display: none;
+    }
 }

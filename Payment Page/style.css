@@ -1,7 +1,3 @@
-li
-{
-    list-style-type: none;
-}
 aside
 {
     background: #FAFFC1;
@@ -18,21 +14,16 @@ ul :hover
 {
     background-color: #00C1FE;
     border-radius: 0.5vw;
-    cursor: pointer;
 }
-nav>ul>li>i
+nav>ul>li>a>i
 {
-    width: 2vw;
+    width: 3vw;
 }
 .logOut :hover
 {
     background-color: #00C1FE;
     border-radius: 0.5vw;
     cursor: pointer;
-}
-a 
-{
-    text-decoration: none;
 }
 .content
 {
