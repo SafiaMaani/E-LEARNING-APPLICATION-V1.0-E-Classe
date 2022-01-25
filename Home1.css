@@ -33,13 +33,12 @@ nav>ul>li>a>i
 {
     width: 81vw;
     height: 100vh;
-    background: #E5E5E5;
+    /* background: #E5E5E5; */
 }
 .searchBar
 {
     height: 10vh;
     position: relative;
-    background-color: white;
 }
 .play
 {
@@ -53,10 +52,10 @@ nav>ul>li>a>i
 }
 .body
 {
-    width: 81vw;
-    height: 10vw;
+    background-color: #E5E5E5;
+    height: 90vh;
 }
-.body>div
+.body>.cards>div
 {
     width: 15vw;
 }
@@ -105,12 +104,16 @@ nav>ul>li>a>i
     }
     .body
     {
+        width: 100% !important;
+        height: 90% !important;
+    }
+    .cards
+    {
         display: flex;
         flex-wrap: wrap;
-        width: 100% !important;
-        height: 80% !important;
+        height: 100% !important;
     }
-    .body>div
+    .body>.cards>div
     {
         flex: 50%;
     }
