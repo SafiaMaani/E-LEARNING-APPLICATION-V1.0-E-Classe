@@ -72,6 +72,7 @@ hr{
     background-color: #E5E5E5;
     height: 90vh;
 }
+
 @media screen and (max-width : 768px)
 {
     main

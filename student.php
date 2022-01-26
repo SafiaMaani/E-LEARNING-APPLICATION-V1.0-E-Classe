@@ -26,7 +26,7 @@
                     <div class="add">
                         <i class="fal fa-sort ms-5 text-info"></i>
                         <button class="btn btn-info text-white">ADD NEW STUDENT</button>
-                        <button class="btnPlus btn-info text-white rounded-circle">+</button>
+                        <button class=" btn-info text-white rounded-circle" id="btnPlus">+</button>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center"><hr></div>

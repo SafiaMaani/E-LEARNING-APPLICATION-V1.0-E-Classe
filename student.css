@@ -92,6 +92,10 @@ td
     padding-bottom: 1.4% !important;
     padding-top: 1.4% !important;
 }
+#btnPlus
+{
+    display: none;
+}
 @media screen and (max-width : 768px)
 {
     main
@@ -166,4 +170,8 @@ td
     {
         display: none;
     }
+    #btnPlus
+{
+    display: inline;
+}
 }
