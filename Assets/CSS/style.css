@@ -1,29 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-*
-{
+*{
     font-family: montserrat;
 }
-body
+.all
 {
     background: linear-gradient(90deg, rgba(0,193,254,1) 0%, rgba(250,255,193,1) 100%);
+    width: 100vw;
+    height: 100vh;
 }
-.container
+main
 {
-    width: 40vw;
+    width: 40%;
+    height: 85%;
     border-radius: 20px;
-    margin-top: 30px;
 }
 p
 {
     font-size: 14px;
 }
-h1{
-    margin-top: 10% !important;
+h1
+{
+    /* margin-top: 10% !important; */
 }
 @media screen and (max-width : 768px)
 {
-    .container
+    main
     {
-        width: 90vw;
+        width: 90%;
     }
 }

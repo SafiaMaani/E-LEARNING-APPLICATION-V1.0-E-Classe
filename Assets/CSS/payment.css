@@ -33,7 +33,6 @@ nav>ul>li>a>i
 {
     width: 81vw;
     height: 100vh;
-    /* background: #E5E5E5; */
 }
 .searchBar
 {
@@ -50,31 +49,27 @@ nav>ul>li>a>i
     position: absolute;
     right: 4vw;
 }
+.partTwo
+{
+    height: 10vh;
+    position: relative;
+}
+.pmtDtl
+{
+    position: absolute;
+    left: 4vw;
+}
+.sort
+{
+    position: absolute;
+    right: 4vw;
+}
 .body
 {
     background-color: #E5E5E5;
     height: 90vh;
 }
-.body>.cards>div
-{
-    width: 15vw;
-}
-.student
-{
-    background: #F0F9FF ;
-}
-.course
-{
-    background:#FEF6FB;
-}
-.payment
-{
-    background: #FEFBEC;
-}
-.users
-{
-    background:linear-gradient(110.42deg, #00C1FE 18.27%, #FAFFC1 91.84%);
-}
+
 @media screen and (max-width : 768px)
 {
     main
@@ -97,6 +92,10 @@ nav>ul>li>a>i
         width: 100%;
         height: 90vh;
     }
+    .Col
+    {
+        display: none;
+    }
     .searchBar
     {
         width: 100%;
@@ -104,34 +103,9 @@ nav>ul>li>a>i
     }
     .body
     {
-        width: 100% !important;
-        height: 90% !important;
-    }
-    .cards
-    {
         display: flex;
-        flex-wrap: wrap;
-        height: 100% !important;
-    }
-    .body>.cards>div
-    {
-        flex: 50%;
-    }
-    .student
-    {
-        height:30% !important;
-    }
-    .course
-    {
-        height: 30% !important;
-    }
-    .payment
-    {
-        height: 30% !important;
-    }
-    .users
-    {
-        height: 30% !important;
+        flex-direction: column;
+        height: 90% !important; 
     }
     aside
     {
@@ -144,7 +118,7 @@ nav>ul>li>a>i
     }
     .eclasse
     {
-        display: none;
+        display: none !important;
     }
     ul
     {
@@ -161,5 +135,9 @@ nav>ul>li>a>i
     .logOut
     {
         display: none !important;
+    }
+    .icone
+    {
+        display: none;
     }
 }

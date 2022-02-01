@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="payment.css">
-    <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet" type="text/css"/>    
+    <link rel="stylesheet" href="Assets/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/CSS/payment.css">
+    <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
     <title>PAYMENT</title>
 </head>
+
 <body>
     <main class="d-flex">
-        <?php
-            include "aside.php";
-        ?>    
+        <?php include "Assets/aside.php"; ?>
         <section class="content">
-            <?php
-                include "searchBar.php";
-            ?>    
+            <?php include "Assets/searchBar.php"; ?>
             <div class="body">
                 <div class="partTwo d-flex align-items-center">
                     <div class="pmtDtl fw-bolder">
-                        <h4>Payment Details</h4>
+                        <h3 class="fs-4 fw-bolder m-0">Payment Details</h3>
                     </div>
                     <div class="sort text-info">
                         <i class="fal fa-sort ms-5"></i>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center"><hr></div>
+                <div class="px-4">
+                    <hr class="m-0">
+                </div>
                 <div class="partThree px-4 ">
-                    <table class="table table-borderless">
-                      <thead class="text-muted">
-                        <tr>
-                          <th scope="col">Name</th>
-                          <th scope="col">Payment Schedule</th>
-                          <th class="Col" scope="col">Bill Number</th>
-                          <th class="Col" scope="col">Amount Paid</th>
-                          <th class="Col" scope="col">Balance amount</th>
-                          <th scope="col">Date</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                      <?php include "paymentTable.php" ?>
-                      <?php foreach($table as $value) : ?>
-                        <tr class="bg-white">
-                          <td><?php echo $value['Name'] ?></td>
-                          <td><?php echo $value['Payment Schedule'] ?></td>
-                          <td><?php echo $value['Bill Number'] ?></td>
-                          <td class="Col"><?php echo $value['Amount Paid'] ?></td>
-                          <td class="Col"><?php echo $value['Balance amount'] ?></td>
-                          <td class="Col"><?php echo $value['Date'] ?></td>
-                          <td><?php echo $value['icon'] ?></td>
-                        </tr>
-                        <?php endforeach ?>
-                      </tbody>
+                    <table class="table table-borderless table-striped">
+                        <thead class="text-muted">
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Payment Schedule</th>
+                                <th scope="col">Bill Number</th>
+                                <th class="Col" scope="col">Amount Paid</th>
+                                <th class="Col" scope="col">Balance amount</th>
+                                <th class="Col" scope="col">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                            <?php
+                            $json_file = "Assets/JSON/pay.json";
+                            $data = file_get_contents($json_file);
+                            $pay = json_decode($data, true);
+                            foreach($pay as $value)
+                            {
+                                echo '<tr>';
+                                echo '<td>' .$value["Name"];
+                                echo '<td>' .$value["Payment Schedule"];
+                                echo '<td>' .$value["Bill Number"];
+                                echo '<td>' .$value["Amount Paid"];
+                                echo '<td>' .$value["Balance amount"];
+                                echo '<td>' .$value["Date"];
+                                echo '<td>' .'<i class="fal fa-eye text-info"></i>'. '<td>';
+
+                                echo '</tr>';
+                            }
+                            ?>
+                        </tbody>
                     </table>
-                </div> 
+                </div>
             </div>
-        </section>   
-    </main>  
+        </section>
+    </main>
 </body>
+
 </html>

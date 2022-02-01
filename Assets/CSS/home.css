@@ -33,6 +33,7 @@ nav>ul>li>a>i
 {
     width: 81vw;
     height: 100vh;
+
 }
 .searchBar
 {
@@ -49,52 +50,30 @@ nav>ul>li>a>i
     position: absolute;
     right: 4vw;
 }
-.partTwo
-{
-    height: 10vh;
-    position: relative;
-}
-.stdList
-{
-    position: absolute;
-    left: 4vw;
-}
-.add
-{
-    position: absolute;
-    right: 4vw;
-}
-hr{
-    width: 95%;
-}
 .body
 {
     background-color: #E5E5E5;
     height: 90vh;
 }
-.icone
+.body>.cards>div
 {
-    width: 5vw;
-    height: 5vh;
+    width: 15vw;
 }
-.card
+.student
 {
-    width: 97%;
-    height: 10%;
+    background: #F0F9FF ;
 }
-table
+.course
 {
-    border-collapse: separate;
-    border-spacing: 0 0.5vw;
+    background:#FEF6FB;
 }
-td
+.payment
 {
-    padding-bottom: 1.4% !important;
-    padding-top: 1.4% !important;
+    background: #FEFBEC;
 }
-#btnPlus
+.users
 {
-    display: none;
+    background:linear-gradient(110.42deg, #00C1FE 18.27%, #FAFFC1 91.84%);
 }
 @media screen and (max-width : 768px)
 {
@@ -118,24 +97,43 @@ td
         width: 100%;
         height: 90vh;
     }
-    .Col
-    {
-        display: none;
-    }
     .searchBar
     {
         width: 100%;
         height: 10%;
     }
-    .btn
-    {
-        display: none;
-    }
     .body
     {
+        width: 100% !important;
+        height: 90% !important;
+    }
+    .cards
+    {
         display: flex;
-        flex-direction: column;
-        height: 90% !important; 
+        flex-wrap: wrap;
+        height: 100% !important;
+    }
+    .body>.cards>div
+    {
+        flex: 45%;
+    }
+    .student
+    {
+        height:30% !important;
+        margin-right: 5%;
+    }
+    .course
+    {
+        height: 30% !important;
+    }
+    .payment
+    {
+        height: 30% !important;
+         margin-right: 5%;
+    }
+    .users
+    {
+        height: 30% !important;
     }
     aside
     {
@@ -148,7 +146,7 @@ td
     }
     .eclasse
     {
-        display: none !important;
+        display: none;
     }
     ul
     {
@@ -166,12 +164,35 @@ td
     {
         display: none !important;
     }
-    .icone
-    {
-        display: none;
-    }
-    #btnPlus
-{
-    display: inline;
 }
+@media screen and (max-width : 340px)
+{
+    .cards
+    {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100% !important;
+    }
+    .body>.cards>div
+    {
+        flex: 100% !important;
+    }
+    .student
+    {
+        height:24% !important;
+        margin-right: 0;
+    }
+    .course
+    {
+        height: 24% !important;
+    }
+    .payment
+    {
+        height: 24% !important;
+         margin-right: 0;
+    }
+    .users
+    {
+        height: 24% !important;
+    }
 }
