@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <title>Edite</title>
 </head>
 
@@ -31,7 +31,7 @@
         <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
     </div>
     <div>
-        <a href="../student.php"><button class="btn btn-primary" type="button">EDITE</button></a>
+        <a href="../student.php"><button class="btn btn-primary" type="button">ADD</button></a>
     </div>
 </body>
 
