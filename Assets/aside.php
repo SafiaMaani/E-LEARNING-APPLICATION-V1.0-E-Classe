@@ -1,3 +1,5 @@
+<?php  include_once "connection.php"; ?>
+
 <aside class="m-0 d-flex flex-column justify-content-center">
         <div class="eclasse border-start border-5 border-info mt-2 mb-3 ms-3 px-2">
             <h1 class="fs-4">E-classe</h1>

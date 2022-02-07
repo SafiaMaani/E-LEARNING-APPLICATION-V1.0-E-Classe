@@ -41,18 +41,18 @@
                         </thead>
                         <tbody class="bg-white">
                             <?php
-                            $json_file = "Assets/JSON/pay.json";
-                            $data = file_get_contents($json_file);
-                            $pay = json_decode($data, true);
-                            foreach($pay as $value)
+                            $sql = "SELECT id, Name, Payment_Schedule , Bill_Number , Enroll_Number , Amount_Paid , Balance_amount , Date FROM payment";
+                            $result = $conn->query($sql);
+              
+                            while ($row = $result->fetch_assoc())
                             {
                                 echo '<tr>';
-                                echo '<td>' .$value["Name"];
-                                echo '<td>' .$value["Payment Schedule"];
-                                echo '<td>' .$value["Bill Number"];
-                                echo '<td>' .$value["Amount Paid"];
-                                echo '<td>' .$value["Balance amount"];
-                                echo '<td>' .$value["Date"];
+                                echo '<td>' .$row["Name"];
+                                echo '<td>' .$row["Payment_Schedule"];
+                                echo '<td>' .$row["Bill_Number"];
+                                echo '<td>' .$row["Amount_Paid"];
+                                echo '<td>' .$row["Balance_amount"];
+                                echo '<td>' .$row["Date"];
                                 echo '<td>' .'<i class="fal fa-eye text-info"></i>'. '<td>';
 
                                 echo '</tr>';
