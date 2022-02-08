@@ -41,10 +41,10 @@
                         </thead>
                         <tbody class="bg-white">
                             <?php
-                            $sql = "SELECT id, Name, Payment_Schedule , Bill_Number , Enroll_Number , Amount_Paid , Balance_amount , Date FROM payment";
-                            $result = $conn->query($sql);
+                            $sql = "SELECT * FROM payment";
+                            $result = mysqli_query($conn , $sql);
               
-                            while ($row = $result->fetch_assoc())
+                            while ($row = mysqli_fetch_assoc($result))
                             {
                                 echo '<tr>';
                                 echo '<td>' .$row["Name"];
@@ -53,10 +53,11 @@
                                 echo '<td>' .$row["Amount_Paid"];
                                 echo '<td>' .$row["Balance_amount"];
                                 echo '<td>' .$row["Date"];
-                                echo '<td>' .'<i class="fal fa-eye text-info"></i>'. '<td>';
+                                echo '<td>' .'<a href= "payment.php?id=' . $row["id"] . '"  class ="text-decoration-none"><i class="fal fa-eye text-info"></i></a>'. '<td>';
 
                                 echo '</tr>';
                             }
+                            
                             ?>
                         </tbody>
                     </table>

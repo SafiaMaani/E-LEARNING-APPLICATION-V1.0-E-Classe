@@ -10,26 +10,31 @@
 </head>
 
 <body>
-    <form method="POST" action="../traitement.php">
+    <form method="POST" action="../traitementStudent.php">
+        <!-- i have to search how to add an image in sql -->
+        <!-- <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">image</span>
+            <input type="image" class="form-control" name="name" placeholder="imageF" aria-label="Username" aria-describedby="addon-wrapping">
+        </div> -->
         <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">Name</span>
-            <input type="text" class="form-control" name="name" placeholder="name" aria-label="Username" aria-describedby="addon-wrapping">
+            <input type="text" class="form-control" name="name" placeholder="name" aria-label="Username" aria-describedby="addon-wrapping" required>
         </div>
         <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">@</span>
-            <input type="email" class="form-control" name="email" placeholder="email" aria-label="Username" aria-describedby="addon-wrapping">
+            <input type="email" class="form-control" name="email" placeholder="email" aria-label="Username" aria-describedby="addon-wrapping" required>
         </div>
         <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">N°</span>
-            <input type="number" class="form-control" name="phone" placeholder="N°" aria-label="Username" aria-describedby="addon-wrapping">
+            <input type="number" class="form-control" name="phone" placeholder="N°" aria-label="Username" aria-describedby="addon-wrapping" required>
         </div>
         <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">Enroll N°</span>
-            <input type="number" class="form-control" name="enrollNumber" placeholder="Enroll N°" aria-label="Username" aria-describedby="addon-wrapping">
+            <input type="number" class="form-control" name="enrollNumber" placeholder="Enroll N°" aria-label="Username" aria-describedby="addon-wrapping" required>
         </div>
         <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">Date of admission</span>
-            <input type="date" class="form-control" name="dateofadmission" placeholder="Date" aria-label="Username" aria-describedby="addon-wrapping">
+            <input type="date" class="form-control" name="dateofadmission" placeholder="Date" aria-label="Username" aria-describedby="addon-wrapping" required>
         </div>
         <div>
             <button class="btn btn-primary" name="add" type="submit">ADD</button>

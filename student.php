@@ -44,10 +44,10 @@
             <tbody class="bg-white rounded">
               <?php
 
-              $sql = "SELECT id, Name, Email , Phone , Enroll_Number , Date_of_admission FROM students";
-              $result = $conn->query($sql);
+              $sql = "SELECT * FROM students";
+              $result = mysqli_query($conn , $sql);
 
-              while ($row = $result->fetch_assoc()) 
+              while ($row = mysqli_fetch_array($result)) 
               {
                 echo '<tr>';
                 echo '<td>' . '<img class="icone" src="Assets/images/icone.jpg" alt="user">';

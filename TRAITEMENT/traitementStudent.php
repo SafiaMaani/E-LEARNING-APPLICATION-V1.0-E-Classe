@@ -35,7 +35,7 @@ if(isset($_POST['edit']))
     $id = $_POST['id'] ;
     $query =  "UPDATE `students` SET `Name`='$name',`Email`='$email',`Phone`='$phone',`Enroll_Number`='$enrollNumber',`Date_of_admission`='$dateofadmission' WHERE `id`= '$id' ";
     mysqli_query($conn , $query);
-    echo mysqli_error($conn);
+    // echo mysqli_error($conn);
     
 }
 

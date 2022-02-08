@@ -17,11 +17,11 @@
 
 <body>
 
-    <form action="../traitement.php" method="POST">
-    <input type="text" name="id" id="" value= "<?php echo $student['id'] ?>" hidden>
+    <form action="../TRAITEMENT/traitementStudent.php" method="POST">
+    <input type="hidden" name="id" id="" value= "<?php echo $student['id'] ?>" >
     <div class="input-group flex-nowrap">
         <span class="input-group-text" id="Name addon-wrapping">Name</span>
-        <input type="text" class="form-control" name="name" aria-label="Username" aria-describedby="addon-wrapping" value="<?php echo $student['Name'] ?>">
+        <input type="search" class="form-control" name="name" aria-label="Username" aria-describedby="addon-wrapping" value="<?php echo $student['Name'] ?>">
     </div>
     <div class="input-group flex-nowrap">
         <span class="input-group-text" id="Email addon-wrapping">@</span>

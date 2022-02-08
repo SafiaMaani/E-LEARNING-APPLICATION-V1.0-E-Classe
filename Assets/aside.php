@@ -12,7 +12,7 @@
         <nav class="d-flex flex-column align-items-center">
             <ul class="nav navbar-nav">
                 <li class="pb-2 pt-2"><a class="d-flex align-items-center text-black text-decoration-none ps-3 pe-3" href="home.php"><i class="fas fa-home mb-0"></i><p class="mb-0">Home</p></a></li>
-                <li class="pb-2 pt-2"><a class="d-flex align-items-center text-black text-decoration-none ps-3 pe-3" href="#"><i class="far fa-bookmark mb-0"></i><p class="mb-0">Course</p></a></li>
+                <li class="pb-2 pt-2"><a class="d-flex align-items-center text-black text-decoration-none ps-3 pe-3" href="courses.php"><i class="far fa-bookmark mb-0"></i><p class="mb-0">Course</p></a></li>
                 <li class="pb-2 pt-2"><a class="d-flex align-items-center text-black text-decoration-none ps-3 pe-3" href="student.php"><i class="far fa-graduation-cap mb-0"></i><p class="mb-0">Students</p></a></li>
                 <li class="pb-2 pt-2"><a class="d-flex align-items-center text-black text-decoration-none ps-3 pe-3" href="payment.php"><i class="far fa-usd-square mb-0"></i></i><p class="mb-0">Payment</p></a></li>
                 <li class="pb-2 pt-2"><a class="d-flex align-items-center text-black text-decoration-none ps-3 pe-3" href="#"><i class="far fa-file-chart-line mb-0"></i><p class="mb-0">Report</p></a></li>
