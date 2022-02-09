@@ -44,7 +44,7 @@
                                         </div>
                                         <div class="modal-header">
                                             <span class="input-group-text">Amount Paid</span>
-                                            <input type="text" name="amount" class="form-control">
+                                            <input type="number" name="amount" class="form-control">
                                         </div>
                                         <div class="modal-header">
                                             <span class="input-group-text">Balance amount</span>

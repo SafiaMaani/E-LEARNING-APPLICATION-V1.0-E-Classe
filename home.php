@@ -18,19 +18,34 @@
             <div class="body">
                 <div class="cards d-flex justify-content-around p-5">
                     <div class="student rounded p-3">
+                        <?php
+                        $stdNbr = "SELECT COUNT('id') as count FROM `students`";
+                        $query = mysqli_query($conn, $stdNbr);
+                        $result = mysqli_fetch_array($query);
+                        ?>
                         <i class="far fa-graduation-cap text-info"></i>
                         <p class="text-muted">Students</p>
-                        <p class="fw-bolder text-end">243</p>
+                        <p class="fw-bolder text-end"><?php echo $result['count'] ?></p>
                     </div>
                     <div class="course rounded p-3">
+                        <?php
+                        $crsNbr = "SELECT COUNT('id') as count FROM `courses`";
+                        $query = mysqli_query($conn, $crsNbr);
+                        $result = mysqli_fetch_array($query);
+                        ?>
                         <i class="far fa-bookmark text-danger"></i>
                         <p class="text-muted">Course</p>
-                        <p class="fw-bolder text-end">13</p>
+                        <p class="fw-bolder text-end"><?php echo $result['count'] ?></p>
                     </div>
                     <div class="payment rounded p-3">
+                        <?php
+                        $pymnt = "SELECT SUM(`Amount_Paid`) as count FROM `payment_details`";
+                        $query = mysqli_query($conn, $pymnt);
+                        $result = mysqli_fetch_array($query);
+                        ?>
                         <i class="far fa-usd-square text-primary"></i>
                         <p class="text-muted">Payment</p>
-                        <p class="fw-bolder text-end">DHS 556,000</p>
+                        <p class="fw-bolder text-end">DHS <?php echo $result['count']?></p>
                     </div>
                     <div class="users rounded p-3">
                         <i class="fal fa-user text-white"></i>
