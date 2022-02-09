@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="Assets/CSS/payment.css">
+    <link rel="stylesheet" href="Assets/CSS/student.css">
     <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>PAYMENT</title>
 </head>
 
@@ -17,42 +18,50 @@
             <?php include "Assets/searchBar.php"; ?>
             <div class="body">
                 <div class="partTwo d-flex align-items-center">
-                    <div class="pmtDtl fw-bolder">
+                    <div class="stdList fw-bolder">
                         <h3 class="fs-4 fw-bolder m-0">Payment Details</h3>
                     </div>
-                </div>
-                <div class="add">
-                    <i class="fal fa-sort ms-5 text-info"></i>
-                    <button class="btn btn-info text-white" type="button" data-bs-toggle="modal" data-bs-target="#myModal">ADD NEW COUSE</button>
-                    <button class="btn-info text-white rounded-circle" id="btnPlus" type="button" data-bs-toggle="modal" data-bs-target="#myModal">+</button>
-                    <form action="./TRAITEMENT/traitementCourses.php" method="post">
-                        <div class="modal fade" id="myModal">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <input type="hidden" name="id">
-                                    <div class="modal-header">
-                                        <span class="input-group-text">Course</span>
-                                        <input type="text" name="course" class="form-control">
-                                    </div>
-                                    <div class="modal-header">
-                                        <span class="input-group-text">Price</span>
-                                        <input type="text" name="price" class="form-control">
-                                    </div>
-                                    <div class="modal-header">
-                                        <span class="input-group-text">Duration</span>
-                                        <input type="time" name="duration" class="form-control">
-                                    </div>
-                                    <div class="modal-header">
-                                        <span class="input-group-text">Domain</span>
-                                        <input type="text" name="domain" class="form-control">
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="submit" name="add" class="btn btn-danger" data-bs-dismiss="modal">ADD</button>
+                    <div class="add">
+                        <i class="fal fa-sort ms-5 text-info"></i>
+                        <button class="btn btn-info text-white" type="button" data-bs-toggle="modal" data-bs-target="#myModal">ADD NEW COUSE</button>
+                        <button class="d-lg-none btn-info text-white rounded-circle" id="btnPlus" type="button" data-bs-toggle="modal" data-bs-target="#myModal">+</button>
+                        <form action="./TRAITEMENT/traitementPayment.php" method="post">
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <input type="hidden" name="id">
+                                        <div class="modal-header">
+                                            <span class="input-group-text">name</span>
+                                            <input type="text" name="name" class="form-control">
+                                        </div>
+                                        <div class="modal-header">
+                                            <span class="input-group-text">Payment Schedule</span>
+                                            <input type="text" name="payment" class="form-control">
+                                        </div>
+                                        <div class="modal-header">
+                                            <span class="input-group-text">Bill Number</span>
+                                            <input type="number" name="bill" class="form-control">
+                                        </div>
+                                        <div class="modal-header">
+                                            <span class="input-group-text">Amount Paid</span>
+                                            <input type="text" name="amount" class="form-control">
+                                        </div>
+                                        <div class="modal-header">
+                                            <span class="input-group-text">Balance amount</span>
+                                            <input type="text" name="balance" class="form-control">
+                                        </div>
+                                        <div class="modal-header">
+                                            <span class="input-group-text">Date</span>
+                                            <input type="date" name="date" class="form-control">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" name="add" class="btn btn-danger" data-bs-dismiss="modal">ADD</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
                 <div class="px-4">
                     <hr class="m-0">
@@ -71,10 +80,10 @@
                         </thead>
                         <tbody class="bg-white">
                             <?php
-                            $sql = "SELECT * FROM payment";
+                            $sql = "SELECT * FROM `payment_details`";
                             $result = mysqli_query($conn, $sql);
 
-                            while ($row = mysqli_fetch_assoc($result)) {
+                            while ($row = mysqli_fetch_array($result)) {
                                 echo '<tr>';
                                 echo '<td>' . $row["Name"];
                                 echo '<td>' . $row["Payment_Schedule"];
