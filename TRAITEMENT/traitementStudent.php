@@ -1,5 +1,5 @@
 <?php
-include_once "connection.php";
+include_once "../connection.php";
 
 //ADD
 if(isset($_POST['add']))
@@ -39,4 +39,4 @@ if(isset($_POST['edit']))
     
 }
 
-header("Location: student.php");
+header("Location: ../student.php");

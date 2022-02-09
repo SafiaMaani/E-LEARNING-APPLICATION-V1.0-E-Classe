@@ -57,7 +57,7 @@
                 echo '<td>' . $row["Enroll_Number"];
                 echo '<td>' . $row["Date_of_admission"];
                 echo '<td>' . '<a href= "CRUD/edite.php?id=' . $row["id"] . ' "  class ="text-decoration-none"><i class="fal fa-pen text-info"></i><a>' . '<td>';
-                echo '<td>' . '<a href= "traitement.php?id=' . $row["id"] . '"  class ="text-decoration-none"><i class="fal fa-trash text-info"></i><a>' . '<td>';
+                echo '<td>' . '<a href= "./TRAITEMENT/traitementStudent.php?id=' . $row["id"] . '" class ="text-decoration-none"><i class="fal fa-trash text-info"></i><a>' . '<td>';
                 echo '</tr>';
               }
               ?>

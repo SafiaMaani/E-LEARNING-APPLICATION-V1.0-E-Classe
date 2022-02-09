@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form method="POST" action="../traitementStudent.php">
+    <form method="POST" action="../TRAITEMENT/traitementStudent.php">
         <!-- i have to search how to add an image in sql -->
         <!-- <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">image</span>

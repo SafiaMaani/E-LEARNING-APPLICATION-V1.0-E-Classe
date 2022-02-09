@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Assets/CSS/student.css">
     <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>STUDENTS</title>
+    <title>COURSES</title>
 </head>
 
 <body>
@@ -80,7 +80,7 @@
                                 echo '<td>' . $row["Duration"];
                                 echo '<td>' . $row["Domain"];
                                 echo '<td>' . '<a href= "CRUD/editCourse.php?id=' .$row["id"].'"  class ="text-decoration-none"><i class="fal fa-pen text-info"></i><a>' . '<td>';
-                                echo '<td>' . '<a href= "courses.php?id=' . $row["id"] . '"  class ="text-decoration-none"><i class="fal fa-trash text-info"></i><a>' . '<td>';
+                                echo '<td>' . '<a href= "TRAITEMENT/traitementCourses.php?id=' .$row["id"].'"  class ="text-decoration-none"><i class="fal fa-trash text-info"></i><a>' . '<td>';
                                 echo '</tr>';
                             }
                             // echo $row['course'];

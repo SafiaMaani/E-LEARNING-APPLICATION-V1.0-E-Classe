@@ -21,14 +21,18 @@ if (isset($_POST['edit']))
     $price = $_POST['price'];
     $duration = $_POST['duration'];
     $domain = $_POST['domain'];
-var_dump($_POST);
+
     $query = "UPDATE `courses` SET `course` = '$course' , `price` = '$price' , `duration` = '$duration' , `domain` = '$domain' WHERE `id` = '$id' ";
     mysqli_query($conn , $query);
 }
 
 //DELETE
-
-
+if (isset($_GET['id'])) 
+{
+    $id = $_GET['id'];
+    $query = "DELETE FROM `courses` WHERE `id` = '$id'";
+    mysqli_query($conn , $query);
+}
 
 header("Location: ../courses.php");
 ?>
