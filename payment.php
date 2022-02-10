@@ -23,7 +23,7 @@
                     </div>
                     <div class="add">
                         <i class="fal fa-sort ms-5 text-info"></i>
-                        <button class="btn btn-info text-white" type="button" data-bs-toggle="modal" data-bs-target="#myModal">ADD NEW COUSE</button>
+                        <button class="btn btn-info text-white" type="button" data-bs-toggle="modal" data-bs-target="#myModal">ADD NEW DETAILS</button>
                         <button class="d-lg-none btn-info text-white rounded-circle" id="btnPlus" type="button" data-bs-toggle="modal" data-bs-target="#myModal">+</button>
                         <form action="./TRAITEMENT/traitementPayment.php" method="post">
                             <div class="modal fade" id="myModal">
@@ -43,12 +43,12 @@
                                             <input type="number" name="bill" class="form-control">
                                         </div>
                                         <div class="modal-header">
-                                            <span class="input-group-text">Amount Paid</span>
+                                            <span class="input-group-text">Amount Paid en DH</span>
                                             <input type="number" name="amount" class="form-control">
                                         </div>
                                         <div class="modal-header">
                                             <span class="input-group-text">Balance amount</span>
-                                            <input type="text" name="balance" class="form-control">
+                                            <input type="number" name="balance" class="form-control">
                                         </div>
                                         <div class="modal-header">
                                             <span class="input-group-text">Date</span>
@@ -73,8 +73,8 @@
                                 <th scope="col">Name</th>
                                 <th scope="col">Payment Schedule</th>
                                 <th scope="col">Bill Number</th>
-                                <th class="Col" scope="col">Amount Paid</th>
-                                <th class="Col" scope="col">Balance amount</th>
+                                <th class="Col" scope="col">Amount Paid (DH)</th>
+                                <th class="Col" scope="col">Balance amount (DH)</th>
                                 <th class="Col" scope="col">Date</th>
                             </tr>
                         </thead>

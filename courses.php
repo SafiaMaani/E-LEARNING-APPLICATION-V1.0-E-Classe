@@ -23,7 +23,7 @@
                     </div>
                     <div class="add">
                         <i class="fal fa-sort ms-5 text-info"></i>
-                        <button class="btn btn-info text-white" type="button" data-bs-toggle="modal" data-bs-target="#myModal">ADD NEW COUSE</button>
+                        <button class="btn btn-info text-white" type="button" data-bs-toggle="modal" data-bs-target="#myModal">ADD NEW COURSE</button>
                         <button class="btn-info text-white rounded-circle" id="btnPlus" type="button" data-bs-toggle="modal" data-bs-target="#myModal">+</button>
                         <form action="./TRAITEMENT/traitementCourses.php" method="post">
                             <div class="modal fade" id="myModal">
@@ -47,7 +47,7 @@
                                             <input type="text" name="domain" class="form-control">
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="submit" name="add" class="btn btn-danger" data-bs-dismiss="modal">ADD</button>
+                                            <button type="submit" name="add" class="btn btn-primary" data-bs-dismiss="modal">ADD</button>
                                         </div>
                                     </div>
                                 </div>
@@ -63,7 +63,7 @@
                         <thead class="text-muted">
                             <tr>
                                 <th scope="col">Course</th>
-                                <th class="mailNone" scope="col">Price</th>
+                                <th class="mailNone" scope="col">Price en DH</th>
                                 <th class="Col colNone" scope="col">Duration</th>
                                 <th class="Col " scope="col">Domain</th>
                             </tr>
@@ -83,8 +83,8 @@
                                 echo '<td>' . '<a href= "TRAITEMENT/traitementCourses.php?id=' .$row["id"].'"  class ="text-decoration-none"><i class="fal fa-trash text-info"></i><a>' . '<td>';
                                 echo '</tr>';
                             }
-                            // echo $row['course'];
                             ?>
+                            
                         </tbody>
                     </table>
                 </div>
