@@ -1,5 +1,5 @@
 <?php
-include_once "../connection.php";
+include_once "../Assets/includes/connection.php";
 
 //ADD
 if (isset($_POST['add'])) 

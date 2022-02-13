@@ -12,9 +12,9 @@
 
 <body>
     <main class="d-flex">
-        <?php include "Assets/aside.php"; ?>
+        <?php include "Assets/includes/sideBar.php"; ?>
         <section class="content">
-            <?php include "Assets/searchBar.php"; ?>
+            <?php include "Assets/includes/searchBar.php"; ?>
             <div class="body">
                 <div class="cards d-flex justify-content-around p-5">
                     <div class="student rounded p-3">

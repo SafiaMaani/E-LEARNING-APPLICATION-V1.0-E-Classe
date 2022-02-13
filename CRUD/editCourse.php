@@ -1,5 +1,5 @@
 <?php
-include_once "../connection.php";
+include_once "../Assets/includes/connection.php";
 
 $id = $_GET['id'];
 $query = "SELECT * FROM `courses` WHERE id = $id ";

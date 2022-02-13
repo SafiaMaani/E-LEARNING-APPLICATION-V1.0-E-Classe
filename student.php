@@ -13,9 +13,9 @@
 
 <body>
   <main class="d-flex">
-    <?php include "Assets/aside.php"; ?>
+    <?php include "Assets/includes/sideBar.php"; ?>
     <section class="content">
-      <?php include "Assets/searchBar.php"; ?>
+      <?php include "Assets/includes/searchBar.php"; ?>
       <div class="body">
         <div class="partTwo d-flex align-items-center">
           <div class="stdList">
