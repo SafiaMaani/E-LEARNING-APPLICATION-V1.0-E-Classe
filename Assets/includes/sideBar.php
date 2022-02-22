@@ -1,4 +1,4 @@
-<?php  include_once "connection.php"; ?>
+<?php include_once "connection.php"; ?>
 
 <aside class="m-0 d-flex flex-column justify-content-center">
         <div class="eclasse border-start border-5 border-info mt-2 mb-3 ms-3 px-2">
@@ -6,8 +6,8 @@
         </div>
         <div class="profilDiv d-flex flex-column flex-row align-items-center">
             <img class="profil" src="Assets/images/profil.png" alt="profil">
-            <h2 class="fs-5">Admin name</h2>
-            <p class=" admin mb-5 fs-6"><a class="text-decoration-none" href="#">Admin</a></p>
+        <h2 class="fs-5"><?php echo $_SESSION['name']; ?></h2>
+            <p class=" admin mb-5 fs-6"><a class="text-decoration-none" href="#"><?php echo $_SESSION['role']; ?></a></p>
         </div>
         <nav class="d-flex flex-column align-items-center">
             <ul class="nav navbar-nav">
@@ -19,7 +19,7 @@
                 <li class="pb-2 pt-2"><a class="d-flex align-items-center text-black text-decoration-none ps-3 pe-3" href="#"><i class="fal fa-sliders-v-square mb-0"></i><p class="mb-0">Setting</p></a></li>
             </ul>
             <div class="logOut mt-5 d-flex flex-column align-items-center">
-                <i class="d-flex flex-row-reverse fal fa-sign-out-alt ps-3 pe-3"><p class="me-3">Logout</p></i>
+                <a href="./deconnexion.php" class="text-decoration-none text-dark"><i class="d-flex flex-row-reverse fal fa-sign-out-alt ps-3 pe-3"><p class="me-3">Logout</p></i></a>
             </div>
         </nav>
 </aside>

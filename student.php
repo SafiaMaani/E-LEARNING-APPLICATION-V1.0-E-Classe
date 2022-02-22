@@ -1,3 +1,10 @@
+<?php 
+session_start();
+
+if(empty($_SESSION['email'])){
+    header("location: index.php");
+}else{
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -106,3 +113,4 @@
 </body>
 
 </html>
+<?php } ?>

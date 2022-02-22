@@ -1,3 +1,10 @@
+<?php 
+session_start();
+
+if(empty($_SESSION['name'])){
+    header("location: index.php");
+}else{
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,7 +52,7 @@
                         ?>
                         <i class="far fa-usd-square text-primary"></i>
                         <p class="text-muted">Payment</p>
-                        <p class="fw-bolder text-end">DHS <?php echo $result['SUM(`Amount_Paid`)']?></p>
+                        <p class="fw-bolder text-end">DHS <?php echo $result['SUM(`Amount_Paid`)'] ?></p>
                     </div>
                     <div class="users rounded p-3">
                         <i class="fal fa-user text-white"></i>
@@ -60,3 +67,4 @@
 </body>
 
 </html>
+<?php } ?>
