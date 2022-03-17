@@ -114,6 +114,5 @@ const toast = document.getElementById('toast');
 const notification = document.getElementById('notification');
 
 toast.addEventListener('click' , function(e){
-    console.log('hello')
     notification.style.visibility = 'visible'
 })

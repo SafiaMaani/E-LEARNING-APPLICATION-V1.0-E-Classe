@@ -108,15 +108,13 @@ if (empty($_SESSION['email'])) {
                                      </div>';
                                 }
                                 ?>
-
-
                             </tbody>
                         </table>
                     </div>
 
                     <div id="notification" class="position-fixed bottom-0 end-0 p-3" style="visibility: hidden;">
                         <div class="text-success border border-5 border-success">
-                            <!-- <button type="button" class="btn-close"></button> -->
+                            <button type="button" class="btn-close"></button>
                             <div class="toast-body">
                                 The course was deleted succesfully
                             </div>

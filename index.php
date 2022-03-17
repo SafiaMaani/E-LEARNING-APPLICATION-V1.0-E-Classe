@@ -7,8 +7,8 @@ if(isset($_SESSION['name'])){
 }else{
 
 if (isset($_POST['sign_in'])) {
-    $email = htmlspecialchars($_POST['email']);
-    $password = htmlspecialchars($_POST['password']);
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
     if (empty($email)) {
         $err_email = "Please insert an email";
