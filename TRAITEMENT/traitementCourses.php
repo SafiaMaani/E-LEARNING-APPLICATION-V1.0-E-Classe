@@ -33,6 +33,6 @@ if (isset($_GET['id']))
     $query = "DELETE FROM `courses` WHERE `id` = '$id'";
     mysqli_query($conn , $query);
 }
-
+sleep(3);
 header("Location: ../courses.php");
 ?>

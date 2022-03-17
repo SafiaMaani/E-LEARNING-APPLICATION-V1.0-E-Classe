@@ -11,6 +11,7 @@ if (isset($_POST['sign_up'])) {
         VALUES ('$email','$password','$name')";
     $query = mysqli_query($conn, $sql);
 
-    header("Location: ../signUp.php");
+    sleep(2);
+    header("Location: ../index.php");
 }
 

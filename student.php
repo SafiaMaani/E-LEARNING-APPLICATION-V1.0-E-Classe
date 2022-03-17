@@ -100,8 +100,25 @@ if(empty($_SESSION['email'])){
                 echo '<td>' . $row["Enroll_Number"];
                 echo '<td>' . $row["Date_of_admission"];
                 echo '<td>' . '<a href= "CRUD/edite.php?id=' . $row["id"] . ' "  class ="text-decoration-none"><i class="fal fa-pen text-info"></i><a>' . '<td>';
-                echo '<td>' . '<a href= "./TRAITEMENT/traitementStudent.php?id=' . $row["id"] . '" class ="text-decoration-none"><i class="fal fa-trash text-info"></i><a>' . '<td>';
-                echo '</tr>';
+                echo '<td>' . '<button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal'.$row["id"].'"><i class="fal fa-trash text-info"></i></button>' . '<td>';
+                echo '</tr>
+                <div class="modal fade" id="exampleModal'.$row["id"].'" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Student Suppression</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                               DO YOU REALLY WANT TO DELETE THIS STUDENT ?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">NO !</button>
+                                <a href="./TRAITEMENT/traitementStudent.php?id= ' . $row["id"] . '" ><button type="button" class="btn btn-success">YES, I_M SURE !</button></a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>';
               }
               ?>
             </tbody>

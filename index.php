@@ -2,12 +2,9 @@
 include_once "Assets/includes/connection.php ";
 session_start();
 
-
 if(isset($_SESSION['name'])){
     header("location: home.php");
 }else{
-
-// $email = $password = '';
 
 if (isset($_POST['sign_in'])) {
     $email = htmlspecialchars($_POST['email']);
